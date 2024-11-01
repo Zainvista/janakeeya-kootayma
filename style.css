@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;}
+
+.navbar {background-color: rgb(65, 37, 0); }
+.navbar-collapse {padding-left: 40%;}
+.navbar-collapse li a{color: white;}
+.navbar-collapse li :hover{color: #c27926;}
+.dropdown-menu li a {color: black;}
+.d-flex i {margin: 0 5px 0 5px; color: white; font-size: 15px;}
+.d-flex {margin-right: 50px;}
+.carousel-inner img {height: 20%;}
+.carousel-inner H1 { position: absolute;top: 35%; left: 25%; z-index: 3; color: white;}
+.carousel-inner h3{ position: absolute;top: 45%; left: 42%; z-index: 3; color: white;}
+
+/*--------------------------------------------------------------
+# Our Mission start
+--------------------------------------------------------------*/
+.section-title {padding-top: 50px; }
+.Services-bg {
+  background-color: #fafcf6;}
+
+.service_box {
+  margin: 15px 0;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 5px;
+  background: #8a4a00; ;
+  transition: all 0.30s ease 0s;}
+
+.service_box:hover {
+  background: #4b1500;}
+
+.service_box .service_icon {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  font-size: 45px;
+  background: #fff;
+  line-height: 70px;
+  border-radius: 50px;
+  transform: translateY(0);
+  transition: all 0.30s ease 0s;}
+
+.service_box:hover .service_icon {
+  transform: translateY(-100%);}
+
+.service_box .service_icon i {
+  color: #8a4a00;}
+
+.section-title h2{text-align: center;}
+
+.service_box h3 {
+  position: relative;
+  top: 40px;
+  margin: 0;
+  color: #fff;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transform: translateY(0%);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0s;}
+
+.service_box:hover h3 {
+  top: -40px;}
+
+.service_box p {
+  color: #fff;
+  margin: 0;
+  opacity: 0;
+  transition: all 0.30s linear 0s;}
+
+.service_box:hover p {
+  opacity: 1;}
+
+
+
+
+
+/*--------------------------------------------------------------
+# commitee start
+--------------------------------------------------------------*/
+.commitee h2{padding-top: 50px; text-align: center; font-weight: 700;}
+.commitee p{font-size: 20px; font-weight: 500;}
+.commitee h5{font-weight: bold; font-size: 25px;}
+.commitee h4{font-size: 20px;}
+
+
+
+
+
+/*--------------------------------------------------------------
+# members start
+--------------------------------------------------------------*/
+.members h2{padding-top: 50px; text-align: center; font-weight: 700;}
+
+
+
+
+
+/*--------------------------------------------------------------
+# gallery start
+--------------------------------------------------------------*/
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	/* Compensate for excess margin on outer gallery flex items */
+	margin: -1rem -1rem;}
+
+.gallery h2{padding-top: 50px; text-align: center; font-weight: 700;}
+
+.gallery-item {
+	/* Minimum width of 24rem and grow to fit available space */
+	flex: 1 0 24rem;
+	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+	margin: 1rem;
+	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+	overflow: hidden;}
+
+.gallery-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform 400ms ease-out;}
+
+.gallery-image:hover {
+	transform: scale(1.15);}
+
+/*
+The following rule will only run if your browser supports CSS grid.
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+*/
+
+@supports (display: grid) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+		grid-gap: 2rem;}
+
+	.gallery,
+	.gallery-item {
+		margin: 0;}}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# news start
+--------------------------------------------------------------*/
+.news h2{padding-top: 50px; text-align: center; font-weight: 700;}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Contact start
+--------------------------------------------------------------*/
+.Contact-bg {
+  background-color: #fafcf6;}
+
+.Contact-bg h2{padding-top: 50px; text-align: center; font-weight: 700;}
+
+#Contact .Contact-area {
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px;
+  margin-right: 30px;}
+
+#Contact .Contact-area i {
+  padding: 15px;
+  background-color: #ffecda;
+  border-radius: 90px;
+  float: left;
+  color: rgb(65, 37, 0); }
+
+#Contact .address:hover i {
+  background-color: rgb(65, 37, 0); ;
+  transition: 0.7s;
+  color: #FFF;}
+
+#Contact .Contact-area h4 {
+  padding: 0 0 0 60px;}
+
+#Contact .Contact-area p {
+  padding: 0 0 0 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: rgb(128, 128, 128);}
+
+#Contact .form-area {
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px;}
+
+#Contact .col-lg-6 .your-name {
+  margin-bottom: 30px;}
+
+#Contact .col-lg-6 .subject {
+  margin-bottom: 30px;}
+
+.btn-div {
+  text-align: center;}
+
+button {
+  background-color: rgb(65, 37, 0); ;
+  padding: 7px 15px 7px 15px;
+  border-radius: 10px;
+  margin-top: 30px;
+  color: white;
+  font-size: 14px;}
+
+button:hover {
+  background-color: white;
+  color: rgb(65, 37, 0); ;
+  border: 1px #632700 solid;
+  transition: 0.5s;}
+
+
+  /*--------------------------------------------------------------
+# footer start
+--------------------------------------------------------------*/
+#footer {
+  text-align: center; margin-top: 50px;}
+
+#footer p {
+  margin: 0%;
+  padding: 20px 0 20px 0;
+  font-size: 12px;}
+
+
+/*--------------------------------------------------------------
+# Scroll To Top Button
+--------------------------------------------------------------*/
+#top-btn {
+  width: 50px;
+  height: 50px;
+  bottom: -50px;
+  right: 20px;
+  position: fixed;
+  text-align: center;
+  border-radius: 100px;
+  background-color: rgb(65, 37, 0); ;
+  cursor: pointer;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.12), 3px 4px 8px 0px rgba(0, 0, 0, 0.11);
+  -webkit-transition: all .8s;
+  transition: all .8s;}
+
+#top-btn:hover {
+  background-color: #8a4a00;}
+
+#top-btn:hover i {
+  padding-top: 5px;}
+
+#top-btn i {
+  padding-top: 15px;
+  font-size: 20px;
+  line-height: 20px;
+  color: #FFFFFF;
+  -webkit-transition: all .8s;
+  transition: all .8s;}
+
