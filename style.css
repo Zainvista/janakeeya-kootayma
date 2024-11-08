@@ -131,46 +131,41 @@ body {
 /*--------------------------------------------------------------
 # gallery start
 --------------------------------------------------------------*/
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;}
-
 .gallery h2{padding-top: 50px; text-align: center; font-weight: 700;}
 
+.gallery-container{
+  padding-top: 25px;
+  display:flex; 
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
 .gallery-item {
-	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
-	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
-	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;}
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin: 10px;
+  transition: 200ms ease-in-out;
+  border-radius: 10px;
+}
 
-.gallery-image {
-	display: block;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	transition: transform 400ms ease-out;}
 
-.gallery-image:hover {
-	transform: scale(1.15);}
+.gallery-item img{ 
+  object-fit: cover;
+   width: 300px;
+   height: 300px;
+   transition: 300ms ease-in-out;
+}
 
-/*
-The following rule will only run if your browser supports CSS grid.
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
-*/
-
-@supports (display: grid) {
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-		grid-gap: 2rem;}
-
-	.gallery,
-	.gallery-item {
-		margin: 0;}}
+.gallery-item img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 
 
