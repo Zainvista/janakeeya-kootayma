@@ -11,9 +11,6 @@ body {
 .dropdown-menu li a {color: black;}
 .d-flex i {margin: 0 5px 0 5px; color: white; font-size: 15px;}
 .d-flex {margin-right: 50px;}
-.carousel-inner img {height: 20%;}
-.carousel-inner H1 { position: absolute;top: 35%; left: 25%; z-index: 3; color: white;}
-.carousel-inner h3{ position: absolute;top: 45%; left: 42%; z-index: 3; color: white;}
 
 /*--------------------------------------------------------------
 # Our Mission start
