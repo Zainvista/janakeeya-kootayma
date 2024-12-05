@@ -11,6 +11,7 @@ body {
 .dropdown-menu li a {color: black;}
 .d-flex i {margin: 0 5px 0 5px; color: white; font-size: 15px;}
 .d-flex {margin-right: 50px;}
+.d-flex i:hover {color: #c27926;}
 
 /*--------------------------------------------------------------
 # Our Mission start
